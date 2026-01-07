@@ -1,4 +1,5 @@
 # Em’s Elixirs & Roots 🌿
+🌐 Live site: https://emselixirs.com/
 
 A working ecommerce website for a holistic apothecary brand concept focused on teas, oils, salves, and wellness products. 
 A personal business website I created for future use. 
