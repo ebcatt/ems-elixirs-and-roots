@@ -1,5 +1,10 @@
 # Em’s Elixirs & Roots — E-commerce Website
 
+## How to view it
+
+This project is hosted live here:
+          https://emselixirs.com/
+
 ## What this is
 
 This is an e-commerce website I built for a holistic apothecary brand concept called *Em’s Elixirs & Roots*. The goal was to create a clean, functional site that could realistically be used to sell products online.
@@ -22,11 +27,6 @@ I wanted to work on something that felt more like a real-world project instead o
 * WooCommerce
 * SiteGround hosting
 * HTML & CSS (for customization and styling)
-
-## How to view it
-
-This project is hosted live here:
-          https://emselixirs.com/
 
 ## What I learned
 
