@@ -1,0 +1,214 @@
+/*Styling for Isoptera website. This is primarily for index.html*/
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 30px 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.box {
+  background-color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.box img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+/*THis is where the other pages will have their stylings*/
+/* ----- ABOUT PAGE STYLES ----- */
+.carousel {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel img.active {
+  opacity: 1;
+}
+
+.about-box {
+  background-color: #c6f6c3; /* light green */
+  color: #1a3d1a;           /* deep forest green for contrast */
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.back-link {
+  display: inline-block;
+  margin: 30px auto;
+  text-decoration: none;
+  color: #333;
+  background-color: #e2e2e2;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.back-link:hover {
+  background-color: #ccc;
+}
+
+/*Projects Styling*/
+.project-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto;
+}
+
+.project {
+  background-color: #f5fff5;
+  border: 2px solid #c6f6c3;
+  border-radius: 12px;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.project h2 {
+  color: #1a3d1a;
+  margin-bottom: 10px;
+}
+
+.project a {
+  text-decoration: none;
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.project a:hover {
+  background-color: #3e8e41;
+}
+
+/*Fun Page Stylings*/
+.carousel-fun {
+  position: relative;
+  width: 450px;  /* wider box */
+  height: 400px; /* taller box */
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.carousel-fun img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-fun img.active {
+  opacity: 1;
+}
+
+/* Move image down a little (for the one that’s cut off) */
+.carousel-fun img:last-child {
+  object-position: center 20%; /* moves the image 20% down */
+}
+
+/* FOOTER STYLINGS*/
+footer {
+  background-color: #222;
+  color: #f0f0f0;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+  font-size: 0.95em;
+  border-top: 3px solid #4caf50;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px; /* spacing between items */
+  flex-wrap: wrap; /* wraps on small screens */
+}
+
+footer a {
+  color: #9be79b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+footer a:hover {
+  color: #c6f6c3;
+}
+
+.divider {
+  color: #666;
+  font-weight: bold;
+}
